@@ -86,13 +86,15 @@ def sudoku_from_console
   puts "If you make mistake do 'q' and try again"
   i = 0
   sudoku = []
-  mm = $stdin.gets.chomp 
+  
   while i <9 do
+    mm = $stdin.gets.chomp 
     break if mm == "q"
      sudoku << mm.split(',').map { |x| x.to_i }
      i+=1
   end
   @board = sudoku
+  print_board
 end
 
 def test
