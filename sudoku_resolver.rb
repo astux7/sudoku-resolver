@@ -57,8 +57,6 @@ def menu_choice(choice)
         try_load_sudoku
       when 2
         sudoku_from_console
-      when 4
-        about_program
       when 8
         system("clear")
         program_menu
